@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/FudaHomes/static/css/main.d1b05096.chunk.css",
+    "main.js": "/FudaHomes/static/js/main.ae886bbd.chunk.js",
+    "main.js.map": "/FudaHomes/static/js/main.ae886bbd.chunk.js.map",
+    "runtime-main.js": "/FudaHomes/static/js/runtime-main.cc09774c.js",
+    "runtime-main.js.map": "/FudaHomes/static/js/runtime-main.cc09774c.js.map",
+    "static/js/2.6f570449.chunk.js": "/FudaHomes/static/js/2.6f570449.chunk.js",
+    "static/js/2.6f570449.chunk.js.map": "/FudaHomes/static/js/2.6f570449.chunk.js.map",
+    "index.html": "/FudaHomes/index.html",
+    "precache-manifest.aeef03a3d6b32880e80ef895dd2cbce2.js": "/FudaHomes/precache-manifest.aeef03a3d6b32880e80ef895dd2cbce2.js",
+    "service-worker.js": "/FudaHomes/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/FudaHomes/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.6f570449.chunk.js.LICENSE": "/FudaHomes/static/js/2.6f570449.chunk.js.LICENSE",
+    "static/media/logo.svg": "/FudaHomes/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cc09774c.js",
+    "static/js/2.6f570449.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.ae886bbd.chunk.js"
+  ]
+}
