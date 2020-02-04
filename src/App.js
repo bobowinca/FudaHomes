@@ -35,7 +35,7 @@ const galleryData = [
 ];
 
 const Wrapper = styled.div`
-  font-family: sans-serif, Georgia, serif;
+  font-family: sans-serif, Georgia, serif;  // font stack
   color: #585858;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
