@@ -1,0 +1,12 @@
+.container {
+  /* width: 100px; */
+  height:200px;
+  /* flex: 1; */
+  grid-row: 1;
+  /* background-color: purple; */
+}
+
+.header-logo {
+  height: 60px;
+  /* pointer-events: none; */
+}

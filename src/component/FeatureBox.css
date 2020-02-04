@@ -1,0 +1,10 @@
+.featureBoxImage {
+  height: 200;
+  width: 100;
+  background-color: #FFFF;
+  /* height: 500px; */
+  /* flex-direction: row;
+  align-items: stretch; */
+  /* flex: 1; */
+  /* pointer-events: none; */
+}

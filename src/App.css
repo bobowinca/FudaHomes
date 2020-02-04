@@ -1,5 +1,7 @@
 .App {
+  flex: 1;
   text-align: center;
+  background-color: white;
 }
 
 .App-logo {
@@ -14,7 +16,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +24,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  /* border-width: 1;
+  border-color: red; */
 }
 
 .App-link {
@@ -35,4 +39,105 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* flex implementation */
+/* .wrapper {
+  display: flex;
+  align-items: flex-end;
+  min-height: 200px;
+  background-color: orange;
+}
+.box1 {
+  align-self: stretch;
+  background-color: blue;
+}
+.box2 {
+  align-self: flex-start;
+  background-color: red;
+} */
+
+/* css grid */
+/* .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: end;
+  grid-auto-rows: 200px;
+  background-color: white;
+}
+.box1 {
+  align-self: stretch;
+  background-color: blue;
+}
+.box2 {
+  align-self: start;
+  background-color: red;
+}
+
+.box3 {
+  align-self: start;
+  background-color: orange;
+} */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  grid-gap: 4px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #333333; */
+}
+
+li {
+  padding-left: 40px;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+.one {
+  grid-column: 2 / span 6;
+  grid-row: 1;
+}
+.two { 
+  grid-column: 1 / 9;
+  grid-row: 2 / span 5;
+  /* background-color: blue; */
+}
+.three {
+  grid-column: 1/ span 8;
+  grid-row: 7 / span 3;
+  background-color: #f2f2f2;
+}
+.four {
+  grid-column: 1/span 8;
+  grid-row: 10 / 13;
+  background-color: #FFFF;
+}
+.five {
+  grid-column: 1/span 8;
+  grid-row: 13 / span 2;
+  background-color: #f2f2f2;
+}
+.six {
+  grid-column: 1/span 8;
+  grid-row: 15;
+  /* background-color: brown; */
 }

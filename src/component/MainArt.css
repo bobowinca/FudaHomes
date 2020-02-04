@@ -1,0 +1,19 @@
+.container {
+  /* width: 100px;
+  height:200px; */
+  /* display: flex;
+  flex-direction: row;
+  flex: 1; */
+  /* grid-row: 1; */
+  /* background-color: purple; */
+}
+
+.mainArtImg {
+  /* width: '100%'; */
+  /* width: 500px; */
+  /* height: 500px; */
+  /* flex-direction: row;
+  align-items: stretch; */
+  /* flex: 1; */
+  /* pointer-events: none; */
+}
