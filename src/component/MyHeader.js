@@ -1,5 +1,5 @@
 import React from 'react';
-import './MyHeader.css';
+import './MyHeader.scss';
 import fudalogo from '../fudalogoHori.png';
 import styled from 'styled-components';
 

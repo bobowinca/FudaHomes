@@ -1,8 +1,12 @@
-.App {
+/* .App {
   flex: 1;
   text-align: center;
   background-color: white;
 }
+
+* {
+  font-size: 18px;
+} */
 
 .App-logo {
   height: 40vmin;
@@ -115,6 +119,11 @@ li a:hover {
 .one {
   grid-column: 2 / span 6;
   grid-row: 1;
+
+  @media only screen and (max-width: 600px)  {
+    grid-column: 1 / span 6;
+    grid-row: 1;
+  }
 }
 .two { 
   grid-column: 1 / 9;
@@ -140,4 +149,30 @@ li a:hover {
   grid-column: 1/span 8;
   grid-row: 15;
   /* background-color: brown; */
+}
+
+@media only screen and (max-width: 600px)  {
+
+  .one {
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    display: flex;
+    flex: 1;
+    padding-left: 20px;
+    flex-wrap: wrap;
+  }
+
+}
+
+@media only screen and (max-width: 768px)  {
+
+  .one {
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    display: flex;
+    flex: 1;
+    padding-left: 20px;
+    flex-wrap: wrap;
+  }
+
 }

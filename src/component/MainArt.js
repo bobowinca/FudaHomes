@@ -30,6 +30,10 @@ const Caption = styled.div`
   left: 30%;
   transform: translate(-50%, -50%);
   color: white;
+
+  @media (max-width: 1024px)  {
+    transform: translate(-40%, -50%);
+  }
 `;
 
 const MyHeader = props => {

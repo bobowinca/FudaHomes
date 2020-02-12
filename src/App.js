@@ -38,6 +38,7 @@ const Wrapper = styled.div`
   font-family: sans-serif, Georgia, serif;  // font stack
   color: #585858;
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(8, 1fr);
   /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
   grid-gap: 2px;
@@ -57,6 +58,28 @@ const NavBar = styled.div`
 const Navi = styled.div`
   margin-left: 100px;
   margin-bottom: 16px;
+  font-size: 16px;
+
+  @media (max-width: 600px)  {
+    margin-left: 40PX;
+    margin-bottom: 12px;
+    font-size: 12px;
+    flex-wrap: nowrap;
+  }
+
+  @media (max-width: 768px)  {
+    margin-left: 24PX;
+    margin-bottom: 12px;
+    font-size: 14px;
+    flex-wrap: nowrap;
+  }
+
+  @media (max-width: 1024px)  {
+    margin-left: 24PX;
+    margin-bottom: 12px;
+    font-size: 14px;
+    flex-wrap: nowrap;
+  }
 `;
 
 const BoxTitle = styled.div`

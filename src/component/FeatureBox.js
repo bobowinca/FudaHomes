@@ -43,7 +43,7 @@ const Content = styled.p`
 const FeatureBox = ({imgURL, imgSize, captionTitle, captionText }) => {
   return (
     <Container>
-      <img src={imgURL} class="featureBoxImage" width={imgSize.width} height={imgSize.height} alt="logo" />
+      <img src={imgURL} className="featureBoxImage" width={imgSize.width} height={imgSize.height} alt="logo" />
       <Caption>
         <Title>{captionTitle}</Title>
         <Content>{captionText}</Content>

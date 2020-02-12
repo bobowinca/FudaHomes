@@ -42,7 +42,7 @@ const GalleryCard = ({item}) => {
 const MyGallery = ({data}) => {
   return (
     <Container>
-      {data.map(it=><GalleryCard item={it} />)}
+      {data.map(it=><GalleryCard item={it} key={`${it.category}_id`} />)}
     </Container>
   )
 }
