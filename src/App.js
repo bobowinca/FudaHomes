@@ -82,6 +82,16 @@ const Navi = styled.div`
   }
 `;
 
+const MenuItem = styled.div`
+  text-align: center;
+
+  &:hover {
+    background-color: #F2F2F2;
+    font-weight: bold;
+    color: #33b5e5;
+  }
+`;
+
 const BoxTitle = styled.div`
   // width : 80%;
   text-shadow: 2px 2px 5px grey;
@@ -164,13 +174,13 @@ const BoxButton = styled.div`
 // `;
 
 const Item = props => {
-  return <li>{props.value}</li>;
+  return <li><MenuItem>{props.value}</MenuItem></li>;
 }
 
 const Menu = props => {
   return (
     <ul>
-      {props.tabs.map((item) => <Item key={`menu-item ${item}`} value={item} />)}
+      {props.tabs.map((item) => <Item style key={`menu-item ${item}`} value={item} />)}
     </ul>
   )
 }
