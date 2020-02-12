@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/FudaHomes/static/css/main.ba6831bd.chunk.css",
+    "main.css": "/FudaHomes/static/css/main.9a89f5ab.chunk.css",
     "main.js": "/FudaHomes/static/js/main.bc1570da.chunk.js",
     "main.js.map": "/FudaHomes/static/js/main.bc1570da.chunk.js.map",
     "runtime-main.js": "/FudaHomes/static/js/runtime-main.4652570d.js",
@@ -8,16 +8,16 @@
     "static/js/2.f5fdd8ad.chunk.js": "/FudaHomes/static/js/2.f5fdd8ad.chunk.js",
     "static/js/2.f5fdd8ad.chunk.js.map": "/FudaHomes/static/js/2.f5fdd8ad.chunk.js.map",
     "index.html": "/FudaHomes/index.html",
-    "precache-manifest.f24345f66f24bdc201f92798db2ec0f1.js": "/FudaHomes/precache-manifest.f24345f66f24bdc201f92798db2ec0f1.js",
+    "precache-manifest.43614cefc9bbbe1a1665a331eb3fb6b4.js": "/FudaHomes/precache-manifest.43614cefc9bbbe1a1665a331eb3fb6b4.js",
     "service-worker.js": "/FudaHomes/service-worker.js",
-    "static/css/main.ba6831bd.chunk.css.map": "/FudaHomes/static/css/main.ba6831bd.chunk.css.map",
+    "static/css/main.9a89f5ab.chunk.css.map": "/FudaHomes/static/css/main.9a89f5ab.chunk.css.map",
     "static/js/2.f5fdd8ad.chunk.js.LICENSE": "/FudaHomes/static/js/2.f5fdd8ad.chunk.js.LICENSE",
     "static/media/logo.svg": "/FudaHomes/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.4652570d.js",
     "static/js/2.f5fdd8ad.chunk.js",
-    "static/css/main.ba6831bd.chunk.css",
+    "static/css/main.9a89f5ab.chunk.css",
     "static/js/main.bc1570da.chunk.js"
   ]
 }

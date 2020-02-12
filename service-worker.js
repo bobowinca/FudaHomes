@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/FudaHomes/precache-manifest.f24345f66f24bdc201f92798db2ec0f1.js"
+  "/FudaHomes/precache-manifest.43614cefc9bbbe1a1665a331eb3fb6b4.js"
 );
 
 self.addEventListener('message', (event) => {
