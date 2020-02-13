@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/FudaHomes/static/css/main.9a89f5ab.chunk.css",
-    "main.js": "/FudaHomes/static/js/main.304c83ca.chunk.js",
-    "main.js.map": "/FudaHomes/static/js/main.304c83ca.chunk.js.map",
+    "main.css": "/FudaHomes/static/css/main.65fbc581.chunk.css",
+    "main.js": "/FudaHomes/static/js/main.f94a7282.chunk.js",
+    "main.js.map": "/FudaHomes/static/js/main.f94a7282.chunk.js.map",
     "runtime-main.js": "/FudaHomes/static/js/runtime-main.4652570d.js",
     "runtime-main.js.map": "/FudaHomes/static/js/runtime-main.4652570d.js.map",
     "static/js/2.f5fdd8ad.chunk.js": "/FudaHomes/static/js/2.f5fdd8ad.chunk.js",
     "static/js/2.f5fdd8ad.chunk.js.map": "/FudaHomes/static/js/2.f5fdd8ad.chunk.js.map",
     "index.html": "/FudaHomes/index.html",
-    "precache-manifest.a7a024372ee27b3594d5114ec8499185.js": "/FudaHomes/precache-manifest.a7a024372ee27b3594d5114ec8499185.js",
+    "precache-manifest.d3066c15bc61d2181d015ddb222f1a1f.js": "/FudaHomes/precache-manifest.d3066c15bc61d2181d015ddb222f1a1f.js",
     "service-worker.js": "/FudaHomes/service-worker.js",
-    "static/css/main.9a89f5ab.chunk.css.map": "/FudaHomes/static/css/main.9a89f5ab.chunk.css.map",
+    "static/css/main.65fbc581.chunk.css.map": "/FudaHomes/static/css/main.65fbc581.chunk.css.map",
     "static/js/2.f5fdd8ad.chunk.js.LICENSE": "/FudaHomes/static/js/2.f5fdd8ad.chunk.js.LICENSE",
     "static/media/logo.svg": "/FudaHomes/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.4652570d.js",
     "static/js/2.f5fdd8ad.chunk.js",
-    "static/css/main.9a89f5ab.chunk.css",
-    "static/js/main.304c83ca.chunk.js"
+    "static/css/main.65fbc581.chunk.css",
+    "static/js/main.f94a7282.chunk.js"
   ]
 }

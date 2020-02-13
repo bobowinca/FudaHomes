@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f5f69494fb23d84810a8a23fc3572367",
+    "revision": "ae143a0e61999c7f25d69c0df909d73c",
     "url": "/FudaHomes/index.html"
   },
   {
-    "revision": "db1f119f3049acd6bd2e",
-    "url": "/FudaHomes/static/css/main.9a89f5ab.chunk.css"
+    "revision": "c45214cd8a079f1ae047",
+    "url": "/FudaHomes/static/css/main.65fbc581.chunk.css"
   },
   {
     "revision": "5ddc9bcfdf46beb33477",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FudaHomes/static/js/2.f5fdd8ad.chunk.js.LICENSE"
   },
   {
-    "revision": "db1f119f3049acd6bd2e",
-    "url": "/FudaHomes/static/js/main.304c83ca.chunk.js"
+    "revision": "c45214cd8a079f1ae047",
+    "url": "/FudaHomes/static/js/main.f94a7282.chunk.js"
   },
   {
     "revision": "1b830d2e7ecaee8988f0",
