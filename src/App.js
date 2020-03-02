@@ -51,6 +51,13 @@ const Wrapper = styled.div`
   }
 `;
 
+const DMCAHeader = styled.div `
+  grid-column: 8;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+`;
+
 const NavBar = styled.div`
   padding-top: 20px;
   display: flex;
@@ -254,6 +261,10 @@ function App() {
   return (
   /** Styled Component Imple */
   <Wrapper>
+    <DMCAHeader>
+      <a href="//www.dmca.com/Protection/Status.aspx?ID=6caa66d4-7315-4613-9fda-60fa8cdae868" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w150-5x1-10.png?ID=6caa66d4-7315-4613-9fda-60fa8cdae868"  alt="DMCA.com Protection Status" /></a>  
+      <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+    </DMCAHeader>
     <div className="one">
       <NavBar>
         <MyHeader/>
