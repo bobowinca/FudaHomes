@@ -39,11 +39,16 @@ const Wrapper = styled.div`
   color: #585858;
   display: grid;
   width: 100%;
+  // width: 1086px;
   grid-template-columns: repeat(8, 1fr);
   /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
   grid-gap: 2px;
   grid-auto-rows: minmax(100px, auto);
   background-color: #FFFF;
+
+  @media (max-width: 768px)  {
+    width: 100%;
+  }
 `;
 
 const NavBar = styled.div`
@@ -89,6 +94,7 @@ const MenuItem = styled.div`
     background-color: #F2F2F2;
     font-weight: bold;
     color: #33b5e5;
+    text-decoration: underline;
   }
 `;
 
@@ -111,30 +117,82 @@ const BoxContainer = styled.div`
   // width: 300px;
   // height: 50px;
   // background-color: red;
+
+  @media (max-width: 768px)  {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    grid-gap: 6px;
+  }
+
+  @media (max-width: 425px)  {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const FeatureOne = styled.div`
   grid-column: 2;
   grid-row: 1;
-  margin-right: 20px;
+  margin: 10px;
+
+  @media (max-width: 768px)  {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+  }
+
+  @media (max-width: 425px)  {
+    grid-column: 1;
+    grid-row: 1;
+  }
 `;
 
 const FeatureTwo = styled.div`
-  margin-left: 20px;
   grid-column: 3;
   grid-row: 1;
+  margin: 10px;
+
+  @media (max-width: 768px)  {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+  }
+
+  @media (max-width: 425px)  {
+    grid-column: 1;
+    grid-row: 2;
+  }
 `;
 
 const FeatureThree = styled.div`
   grid-column: 2;
   grid-row: 2;
-  margin-right: 20px;
+  margin: 10px;
+
+  @media (max-width: 768px)  {
+    grid-column: 2 / span 2;
+    grid-row: 3;
+  }
+
+  @media (max-width: 425px)  {
+    grid-column: 1;
+    grid-row: 3;
+  }
 `;
 
 const FeatureFour = styled.div`
-  margin-left: 20px;
   grid-column: 3;
   grid-row: 2;
+  margin: 10px;
+
+  @media (max-width: 768px)  {
+    grid-column: 2 / span 2;
+    grid-row: 4;
+  }
+
+  @media (max-width: 425px)  {
+    grid-column: 1;
+    grid-row: 4;
+  }
 `;
 
 const BoxFooter = styled.div`
@@ -194,37 +252,6 @@ function App() {
   const qualityText01 = "With more than 10 years of experience in the home renovation business, FuDa Homes is a skilled, fully insured and reliable company"
 
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={fudalogo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-    
-    /** CSS grid imple */
-    // <div class="wrapper">
-    //   <myheader className="one">
-    //     One
-    //     {/* <myheader/> */}
-    //     <div>aaaaaaa</div>
-    //   </myheader>
-    //   <div className="two">Two</div>
-    //   <div className="three">Three</div>
-    //   <div className="four">Four</div>
-    //   <div className="five">Five</div>
-    //   <div className="six">Six</div>
-    // </div>
-
   /** Styled Component Imple */
   <Wrapper>
     <div className="one">
