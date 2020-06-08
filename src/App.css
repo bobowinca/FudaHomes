@@ -1,7 +1,7 @@
 /* .App {
   flex: 1;
   text-align: center;
-  background-color: white;
+  background-color: #FFFF;
 } */
 
 /* * {
@@ -20,14 +20,14 @@
 }
 
 .App-header {
-  background-color: white;
+  background-color: #FFFF;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #FFFF;
   /* border-width: 1;
   border-color: red; */
 }
@@ -67,7 +67,7 @@
   grid-template-columns: repeat(3,1fr);
   align-items: end;
   grid-auto-rows: 200px;
-  background-color: white;
+  background-color: #FFFF;
 }
 .box1 {
   align-self: stretch;
@@ -105,16 +105,20 @@ li {
 }
 
 li a {
-  display: block;
-  color: white;
+  /* display: block;
+  color: #FFFF;
   text-align: center;
-  padding: 16px;
+  padding: 16px; */
   text-decoration: none;
 }
 
-li a:hover {
+/* li a:hover {
   background-color: #111111;
-}
+} */
+
+/* li a:visited {
+  color: red;
+} */
 
 .one {
   grid-column: 2 / span 6;
@@ -135,19 +139,19 @@ li a:hover {
   grid-row: 7;
   background-color: #f2f2f2;
 }
-.four {
+/* .four {
   grid-column: 1/span 8;
   grid-row: 8 / 11;
   background-color: #FFFF;
+} */
+.four {
+  grid-column: 1/span 8;
+  grid-row: 8 / span 2;
+  background-color: #f2f2f2;
 }
 .five {
   grid-column: 1/span 8;
-  grid-row: 11 / span 2;
-  background-color: #f2f2f2;
-}
-.six {
-  grid-column: 1/span 8;
-  grid-row: 13;
+  grid-row: 10;
   /* background-color: brown; */
 }
 
