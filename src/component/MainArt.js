@@ -3,6 +3,9 @@ import React from 'react';
 // import mainArtImage from '../fudaMainArt01.jpeg';
 import styled from 'styled-components';
 
+const defaultImgUrl = 'https://lh3.googleusercontent.com/Hj-dgWkISAeNwzLL7zzVJufSoA9gIx4dGVSgv0qnFm-RJMvqTHjEj4RIYUOmxAhjAr1TV_DoO5jza_VBX4xFqsu5vjwmfPL9zB8bFR8zhL1ema0y8rUSyTFQ_GmTdF45mMaqJR9MEw=w2296-h1530-no';
+const imgNotFoundUrl = 'https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-scaled-1150x647.png';
+
 const Container = styled.div`
   display: flex;
   flex-direction: row;
@@ -12,7 +15,7 @@ const Container = styled.div`
   // background-position: center
   // width: 100wh
   // height: 100vh
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://lh3.googleusercontent.com/Hj-dgWkISAeNwzLL7zzVJufSoA9gIx4dGVSgv0qnFm-RJMvqTHjEj4RIYUOmxAhjAr1TV_DoO5jza_VBX4xFqsu5vjwmfPL9zB8bFR8zhL1ema0y8rUSyTFQ_GmTdF45mMaqJR9MEw=w2296-h1530-no');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${props=>props.imgUrl ? props.imgUrl : defaultImgUrl});
   height: 100%;
   background-position: 0 60%;
   background-repeat: no-repeat;
@@ -36,16 +39,16 @@ const Caption = styled.div`
   }
 `;
 
-const MyHeader = props => {
+const MainArt = props => {
   return (
-    <Container>
+    <Container imgUrl={props.imgUrl} >
       {/* <img src={mainArtImage} className="mainArtImg" alt="logo" /> */}
-      <Caption>
+      {props.showCaption && <Caption>
         <h1>Dedicated to deliver the highest quality<br /> and best value for your loved home</h1>
-      </Caption>
+      </Caption>}
     </Container>
 
   )
 }
 
-export default MyHeader
+export default MainArt;

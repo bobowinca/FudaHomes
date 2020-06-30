@@ -39,6 +39,11 @@ const defaultRoute = config.DefaultRoutes;
 //   },
 // ];
 
+const mainArtImgs = {
+  HOME: 'https://lh3.googleusercontent.com/Hj-dgWkISAeNwzLL7zzVJufSoA9gIx4dGVSgv0qnFm-RJMvqTHjEj4RIYUOmxAhjAr1TV_DoO5jza_VBX4xFqsu5vjwmfPL9zB8bFR8zhL1ema0y8rUSyTFQ_GmTdF45mMaqJR9MEw=w2296-h1530-no',
+  PRODUCTS: 'https://lh3.googleusercontent.com/pw/ACtC-3ce_xLPSwXG1NQs3PlpZD9suimm-M2qR9U9uffg0n4K4VNufNTj-usnmvwO0gbWzOcp7kaEoOvAp-dd3iqot6pAyxjIM19oan4qtPdA7vwAYEH4iIWyprYHREfW0yymGSohFJd6iRTj9FVdl1DqV75E=w2560-h924-no'
+}
+
 const Wrapper = styled.div`
   font-family: sans-serif, Georgia, serif;  // font stack
   color: #585858;
@@ -300,7 +305,7 @@ const Menu = props => {
   )
 }
 
-const renderContent = (param) => {
+const renderContent = param => {
   console.log(`>>>>>>>>param: ${param}`);
   switch(param) {
     case defaultRoute.home:
@@ -327,6 +332,8 @@ function App(props) {
     setState(page);
   }
 
+  const showCaption = (currentPage === defaultRoute.home);
+
   // const gridColor = currentPage === defaultRoute.home ? {backgroundColor: "#FFFF"} : {backgroundColor: "#f2f2f2"};
 
   return (
@@ -345,7 +352,7 @@ function App(props) {
       </NavBar>
     </div>
     <div className="two">
-      <MainArt />
+      <MainArt imgUrl={mainArtImgs[currentPage]} showCaption={showCaption} />
     </div>
     <div className="three">
       {
