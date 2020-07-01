@@ -39,12 +39,19 @@ const Caption = styled.div`
   }
 `;
 
-const MainArt = props => {
+const MainArt = ({imgUrl, showCaption, captionText}) => {
+  // const ifShowCaption = showCaption || captionText;
+  const caption = (
+    captionText ?
+    <h1>{captionText}</h1>
+    : <h1>Dedicated to deliver the highest quality<br /> and best value for your loved home</h1>
+  );
   return (
-    <Container imgUrl={props.imgUrl} >
+    <Container imgUrl={imgUrl} >
       {/* <img src={mainArtImage} className="mainArtImg" alt="logo" /> */}
-      {props.showCaption && <Caption>
-        <h1>Dedicated to deliver the highest quality<br /> and best value for your loved home</h1>
+      {showCaption && <Caption>
+        {/* <h1>Dedicated to deliver the highest quality<br /> and best value for your loved home</h1> */}
+        {caption}
       </Caption>}
     </Container>
 

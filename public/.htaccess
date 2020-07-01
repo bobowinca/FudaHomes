@@ -1,0 +1,13 @@
+Options -MultiViews
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.html [QSA,L]
+    RewriteCond %{HTTP_REFERER} !^http://fudahomes.ca/.*$      [NC]
+    RewriteCond %{HTTP_REFERER} !^http://fudahomes.ca$      [NC]
+    RewriteCond %{HTTP_REFERER} !^http://www.fudahomes.ca/.*$      [NC]
+    RewriteCond %{HTTP_REFERER} !^http://www.fudahomes.ca$      [NC]
+    RewriteCond %{HTTP_REFERER} !^https://fudahomes.ca/.*$      [NC]
+    RewriteCond %{HTTP_REFERER} !^https://fudahomes.ca$      [NC]
+    RewriteCond %{HTTP_REFERER} !^https://www.fudahomes.ca/.*$      [NC]
+    RewriteCond %{HTTP_REFERER} !^https://www.fudahomes.ca$      [NC]
+    RewriteRule .*\.(jpg|jpeg|gif|png|bmp|js|json|txt)$ - [F,NC]

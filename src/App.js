@@ -41,7 +41,12 @@ const defaultRoute = config.DefaultRoutes;
 
 const mainArtImgs = {
   HOME: 'https://lh3.googleusercontent.com/Hj-dgWkISAeNwzLL7zzVJufSoA9gIx4dGVSgv0qnFm-RJMvqTHjEj4RIYUOmxAhjAr1TV_DoO5jza_VBX4xFqsu5vjwmfPL9zB8bFR8zhL1ema0y8rUSyTFQ_GmTdF45mMaqJR9MEw=w2296-h1530-no',
-  PRODUCTS: 'https://lh3.googleusercontent.com/pw/ACtC-3ce_xLPSwXG1NQs3PlpZD9suimm-M2qR9U9uffg0n4K4VNufNTj-usnmvwO0gbWzOcp7kaEoOvAp-dd3iqot6pAyxjIM19oan4qtPdA7vwAYEH4iIWyprYHREfW0yymGSohFJd6iRTj9FVdl1DqV75E=w2560-h924-no'
+  // PRODUCTS: 'https://lh3.googleusercontent.com/pw/ACtC-3ce_xLPSwXG1NQs3PlpZD9suimm-M2qR9U9uffg0n4K4VNufNTj-usnmvwO0gbWzOcp7kaEoOvAp-dd3iqot6pAyxjIM19oan4qtPdA7vwAYEH4iIWyprYHREfW0yymGSohFJd6iRTj9FVdl1DqV75E=w2560-h924-no'
+  PRODUCTS: 'https://lh3.googleusercontent.com/pw/ACtC-3eXVheh7qoghKIRRiLJuaJ_YQUHtE16c5iMVtQen8AR3YxoHWFE2tf21nKKnP99KkVXBEbELL18T0IsX1exBQeAMFRyH5fPfdfbft-5NOO7zN48EoCUElJn0FtXFfqCfzbQf6zM6qbfYSSFRpz_y7xo=w2000-h1333-no'
+}
+
+const mainArtCaption = {
+  PRODUCTS: 'Welcome to Smart Home'
 }
 
 const Wrapper = styled.div`
@@ -332,15 +337,16 @@ function App(props) {
     setState(page);
   }
 
-  const showCaption = (currentPage === defaultRoute.home);
-
+  // const showCaption = (currentPage === defaultRoute.home);
+  const mainArtCaptionText = mainArtCaption[currentPage] ?? ''
+  
   // const gridColor = currentPage === defaultRoute.home ? {backgroundColor: "#FFFF"} : {backgroundColor: "#f2f2f2"};
 
   return (
   /** Styled Component Imple */
   <Wrapper>
     <DMCAHeader>
-      <a href="//www.dmca.com/Protection/Status.aspx?ID=6caa66d4-7315-4613-9fda-60fa8cdae868" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w150-5x1-10.png?ID=6caa66d4-7315-4613-9fda-60fa8cdae868"  alt="DMCA.com Protection Status" /></a>  
+      <a href="//www.dmca.com/Protection/Status.aspx?ID=6caa66d4-7315-4613-9fda-60fa8cdae868" title="DMCA.com Protection Status" className="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w150-5x1-10.png?ID=6caa66d4-7315-4613-9fda-60fa8cdae868"  alt="DMCA.com Protection Status" /></a>  
       <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
     </DMCAHeader>
     <div className="one">
@@ -352,7 +358,7 @@ function App(props) {
       </NavBar>
     </div>
     <div className="two">
-      <MainArt imgUrl={mainArtImgs[currentPage]} showCaption={showCaption} />
+      <MainArt imgUrl={mainArtImgs[currentPage]} showCaption={true} captionText={mainArtCaptionText} />
     </div>
     <div className="three">
       {
