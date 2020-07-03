@@ -346,8 +346,8 @@ function App(props) {
   /** Styled Component Imple */
   <Wrapper>
     <DMCAHeader>
-      <a href="//www.dmca.com/Protection/Status.aspx?ID=6caa66d4-7315-4613-9fda-60fa8cdae868" title="DMCA.com Protection Status" className="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w150-5x1-10.png?ID=6caa66d4-7315-4613-9fda-60fa8cdae868"  alt="DMCA.com Protection Status" /></a>  
-      <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+    <a href="//www.dmca.com/Protection/Status.aspx?id=ecdd8f38-649b-4eee-9d7a-b39d970fa07a" title="DMCA.com Protection Status" class="dmca-badge"> <img src="//images.dmca.com/Badges/dmca-badge-w100-5x1-03.png?ID=ecdd8f38-649b-4eee-9d7a-b39d970fa07a" alt="DMCA.com Protection Status" /></a> 
+    <script src="//images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
     </DMCAHeader>
     <div className="one">
       <NavBar>

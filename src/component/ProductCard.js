@@ -2,16 +2,21 @@ import React from 'react';
 import './ProductCard.scss';
 // import mainArtImage from '../fudaMainArt01.jpeg';
 import styled from 'styled-components';
+// import {Link} from 'react-router-dom';
+import {
+  useRouteMatch
+} from "react-router-dom";
+// import StyledLink from './StyledLink';
 
 const Container = styled.div`
   // height: 50px;
   // width: 10px;
-  width: 300px;
+  width: 332px;
   // height: 50px;
   padding-top: 10px;
   padding-bottom: 30px;
-  padding-left: 16px;
-  padding-right: 16px;
+  // padding-left: 16px;
+  // padding-right: 16px;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -22,15 +27,15 @@ const Container = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   @media (max-width: 768px)  {
-    width: 100%;
-    padding-left: 4px;
-    padding-right: 4px;
+    // width: 100%;
+    // padding-left: 4px;
+    // padding-right: 4px;
   }
 
   @media (max-width: 425px)  {
-    width: 100%;
-    padding-left: 2px;
-    padding-right: 0px;
+    // width: 100%;
+    // padding-left: 2px;
+    // padding-right: 0px;
   }
 `;
 
@@ -73,15 +78,15 @@ const BoxButton = styled.div`
   }
 `;
 
-const ProductCard = ({imgURL, imgSize, captionTitle, captionText }) => {
-  const image = require(`../assets/${imgURL}`);
+const ProductCard = ({imgURL, imgSize, captionTitle, captionText,  }) => {
+  const image = require(`../assets/products/${imgURL}`);
 
   return (
     <Container>
       <Title>{captionTitle}</Title>
       <img src={image} className="ProductCardImage" width={imgSize.width} alt="logo" />
       <Caption>
-        <BoxButton>{captionText}</BoxButton>
+        <BoxButton >{captionText}</BoxButton>
       </Caption>
     </Container>
 

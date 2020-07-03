@@ -146,12 +146,12 @@ li a {
 } */
 .four {
   grid-column: 1/span 8;
-  grid-row: 8 / span 2;
+  grid-row: 8 / span 1;
   background-color: #f2f2f2;
 }
 .five {
   grid-column: 1/span 8;
-  grid-row: 10;
+  grid-row: 9;
   /* background-color: brown; */
 }
 

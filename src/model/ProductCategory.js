@@ -8,7 +8,7 @@
 
 export function mapProductCategory(values) {
   return {
-    category_id: values.category_id,
+    id: values.category_id,
     name: values.name,
     description: values.description,
     image: values.image,
