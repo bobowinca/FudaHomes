@@ -10,7 +10,7 @@ const systems = [
   {name: 'google', img: google},
   {name: 'siri', img: siri},
   {name: 'alexa', img: alexa},
-  {name: 'dueros', img: alexa}
+  {name: 'dueros', img: dueros}
 ];
 
 const Container = styled.div`
