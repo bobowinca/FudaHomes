@@ -25,6 +25,7 @@ ReactDOM.render(
         <Route path="/products" component={ProductsPage} />
         <Route path="/contactus" component={ContactusPage} /> */}
         {/* <Route exact path="/services" render={() => (window.location = "https://smarth.ca/alarm-system-1")} /> */}
+        <Route path="/renovation" render={() => <App currentPage={defaultRoute.services} />} />
         <Route path="/services" render={() => <App currentPage={defaultRoute.services} />} />
         <Route path="/projects" render={() => <App currentPage={defaultRoute.projects} />} />
         <Route path="/products" render={() => <App currentPage={defaultRoute.products} />} />

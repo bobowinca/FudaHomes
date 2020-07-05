@@ -5,5 +5,10 @@
     "projects": "PROJECTS",
     "products": "PRODUCTS",
     "contactus": "CONTACT US"
+  },
+  "ProductsFirstDefaultRoutes": {
+    "home": "HOME",
+    "renovation": "RENOVATION",
+    "contactus": "CONTACT US"
   }
 }

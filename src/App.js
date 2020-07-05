@@ -14,7 +14,8 @@ import HomeContent from './component/HomeContent';
 import ProductContent from './component/ProductContent';
 
 const items = ['HOME','SERVICES', 'PROJECTS', 'ABOUT US', 'CONTACT US'];
-const defaultRoute = config.DefaultRoutes;
+// const defaultRoute = config.DefaultRoutes;
+const defaultRoute = config.ProductsFirstDefaultRoutes;
 
 // const galleryData = [
 //   {
@@ -40,9 +41,9 @@ const defaultRoute = config.DefaultRoutes;
 // ];
 
 const mainArtImgs = {
-  HOME: 'https://lh3.googleusercontent.com/Hj-dgWkISAeNwzLL7zzVJufSoA9gIx4dGVSgv0qnFm-RJMvqTHjEj4RIYUOmxAhjAr1TV_DoO5jza_VBX4xFqsu5vjwmfPL9zB8bFR8zhL1ema0y8rUSyTFQ_GmTdF45mMaqJR9MEw=w2296-h1530-no',
-  // PRODUCTS: 'https://lh3.googleusercontent.com/pw/ACtC-3ce_xLPSwXG1NQs3PlpZD9suimm-M2qR9U9uffg0n4K4VNufNTj-usnmvwO0gbWzOcp7kaEoOvAp-dd3iqot6pAyxjIM19oan4qtPdA7vwAYEH4iIWyprYHREfW0yymGSohFJd6iRTj9FVdl1DqV75E=w2560-h924-no'
-  PRODUCTS: 'https://lh3.googleusercontent.com/pw/ACtC-3eXVheh7qoghKIRRiLJuaJ_YQUHtE16c5iMVtQen8AR3YxoHWFE2tf21nKKnP99KkVXBEbELL18T0IsX1exBQeAMFRyH5fPfdfbft-5NOO7zN48EoCUElJn0FtXFfqCfzbQf6zM6qbfYSSFRpz_y7xo=w2000-h1333-no'
+  HOME: 'https://lh3.googleusercontent.com/pw/ACtC-3eXVheh7qoghKIRRiLJuaJ_YQUHtE16c5iMVtQen8AR3YxoHWFE2tf21nKKnP99KkVXBEbELL18T0IsX1exBQeAMFRyH5fPfdfbft-5NOO7zN48EoCUElJn0FtXFfqCfzbQf6zM6qbfYSSFRpz_y7xo=w2000-h1333-no',
+  RENOVATION: 'https://lh3.googleusercontent.com/Hj-dgWkISAeNwzLL7zzVJufSoA9gIx4dGVSgv0qnFm-RJMvqTHjEj4RIYUOmxAhjAr1TV_DoO5jza_VBX4xFqsu5vjwmfPL9zB8bFR8zhL1ema0y8rUSyTFQ_GmTdF45mMaqJR9MEw=w2296-h1530-no',
+  // PRODUCTS: 'https://lh3.googleusercontent.com/pw/ACtC-3eXVheh7qoghKIRRiLJuaJ_YQUHtE16c5iMVtQen8AR3YxoHWFE2tf21nKKnP99KkVXBEbELL18T0IsX1exBQeAMFRyH5fPfdfbft-5NOO7zN48EoCUElJn0FtXFfqCfzbQf6zM6qbfYSSFRpz_y7xo=w2000-h1333-no'
 }
 
 const mainArtCaption = {
@@ -315,10 +316,10 @@ const renderContent = param => {
   switch(param) {
     case defaultRoute.home:
       console.log(`we are here ${defaultRoute.home}`);
-      return <HomeContent/>;
-    case defaultRoute.products:
-      console.log(`we are here ${defaultRoute.products}`);
       return <ProductContent/>;
+    case defaultRoute.renovation:
+      console.log(`we are here ${defaultRoute.home}`);
+      return <HomeContent/>;
     default:
       return null;
   }
