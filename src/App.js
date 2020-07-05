@@ -401,7 +401,7 @@ function App(props) {
         <MyGallery data={galleryData} />
       </> }
     </div> */}
-    <div className="four"></div>
+    {/* <div className="four"></div> */}
     <div className="five"><FooterArt /></div>
   </Wrapper>
   );

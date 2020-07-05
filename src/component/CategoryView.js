@@ -12,6 +12,7 @@ import axios from 'axios';
 import StyledLink from './StyledLink';
 import ProductCard from './ProductCard';
 import SupportedSystem from './SupportedSystem';
+import Certificates from './Certificates';
 import MyGallery from './MyGallery';
 import installYourselfImg from '../assets/products/InstallYourself.jpeg';
 import installationServicesImg from '../assets/products/InstallationServices.jpeg';
@@ -114,6 +115,15 @@ const BoxFooter = styled.div`
 `;
 
 const WhiteBox = styled.div`
+  background-color: #FFFF;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const BodyBox = styled.div`
   // background-color: #FFFF;
   display: flex;
   flex: 1;
@@ -195,7 +205,7 @@ const CategoryView = props => {
         {/* <img src={installYourselfImg} className="ProductCardImage" alt="footer01" /> */}
       </BoxFooter>
       <div  />
-      <WhiteBox>
+      <BodyBox>
         <BoxTitle>
           Install It Yourself
         </BoxTitle>
@@ -205,14 +215,24 @@ const CategoryView = props => {
         </BoxTitle>
         <BottomBox image={installationServicesImg} h={'376px'} />
         <BoxTitle>
-          Work with the Virtual Assistance you are most familiar with
+          Work with your favourite Virtual Assistance
         </BoxTitle>
         <SupportedSystem />
+        {/* <BoxTitle>
+          Certificates
+        </BoxTitle> */}
+        {/* <Certificates /> */}
         {/* <BoxFooter>Supported System</BoxFooter> */}
         {/* <BoxTitle>
           We also provide on-site installation services
         </BoxTitle>
         <BottomBox image={installationServicesImg} /> */}
+      </BodyBox>
+      <WhiteBox>
+        <BoxTitle>
+          Certificates
+        </BoxTitle>
+        <Certificates />
       </WhiteBox>
       {/* <WhiteBox>
         <BoxTitle>
