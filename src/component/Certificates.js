@@ -7,10 +7,10 @@ const ul = require(`../assets/products/ul.jpeg`);
 const ic = require(`../assets/products/ic.jpeg`);
 
 const certs = [
-  intertek,
-  fc,
-  ul,
-  ic
+  {name: 'intertek', img: intertek},
+  {name: 'fc', img: fc},
+  {name: 'ul', img: ul},
+  {name: 'ic', img: ic}
 ];
 
 const Container = styled.div`
@@ -40,7 +40,7 @@ const StyledImg = styled.img`
 
 const CertificateTabs = props => (
   certs.map((row) => (
-    <StyledImg src={row} alt="Virtual Assistance" />
+    <StyledImg key={row.name} src={row.img} alt="Virtual Assistance" />
   ))
 );
 

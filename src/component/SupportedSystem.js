@@ -7,10 +7,10 @@ const alexa = require(`../assets/products/alexa.png`);
 const dueros = require(`../assets/products/dueros.jpeg`);
 
 const systems = [
-  google,
-  siri,
-  alexa,
-  dueros
+  {name: 'google', img: google},
+  {name: 'siri', img: siri},
+  {name: 'alexa', img: alexa},
+  {name: 'dueros', img: alexa}
 ];
 
 const Container = styled.div`
@@ -40,7 +40,7 @@ const StyledImg = styled.img`
 
 const SystemTabs = props => (
   systems.map((row) => (
-    <StyledImg src={row} alt="Virtual Assistance" />
+    <StyledImg key={row.name} src={row.img} alt="Virtual Assistance" />
   ))
 );
 
