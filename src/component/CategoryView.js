@@ -142,9 +142,10 @@ const BottomBox = styled.div`
   background-image: url(${props => props.image});
   background-repeat: no-repeat;
   background-size: cover;
-  // height: 360px;
-  height: ${props => props.h};
+  // min-height: ${props => props.h};
+  // height: ${props => props.h};
   width: 76%;
+  padding-top: ${props => props.h}; //this is the auto div size
   margin: 20px;
   // position: relative;
 `;
@@ -209,11 +210,11 @@ const CategoryView = props => {
         <BoxTitle>
           Install It Yourself
         </BoxTitle>
-        <BottomBox image={installYourselfImg} h={'360px'} />
+        <BottomBox image={installYourselfImg} h={'27%'} />
         <BoxTitle>
           We also provide on-site installation services
         </BoxTitle>
-        <BottomBox image={installationServicesImg} h={'376px'} />
+        <BottomBox image={installationServicesImg} h={'30%'} />
         <BoxTitle>
           Work with your favourite Virtual Assistance
         </BoxTitle>
