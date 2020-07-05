@@ -300,7 +300,7 @@ const Item = props => {
   return (<li><Link to={route}><MenuItem onClick={()=>{selectPage(name)}} style={tabStyle} >{name}</MenuItem></Link></li>);
 }
 
-const Menu = props => {
+const NavTabs = props => {
   const tabs = Object.entries(props.tabs);  //cast tabs object to array
   const {selectPage, currentPage} = props;
   return (
@@ -353,7 +353,7 @@ function App(props) {
       <NavBar>
         <MyHeader/>
         <Navi>
-          <Menu tabs={defaultRoute} selectPage={selectPage} currentPage={currentPage} />
+          <NavTabs tabs={defaultRoute} selectPage={selectPage} currentPage={currentPage} />
         </Navi>
       </NavBar>
     </div>
