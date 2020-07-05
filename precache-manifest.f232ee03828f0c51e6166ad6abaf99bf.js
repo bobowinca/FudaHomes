@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fed49d227b3fe4b67d5049c02a527871",
+    "revision": "2242be097eafc8e58ba31f0200a43876",
     "url": "/index.html"
   },
   {
-    "revision": "6808452c41818b5c64d5",
-    "url": "/static/css/main.9032f906.chunk.css"
+    "revision": "b50edaa7197252b89be3",
+    "url": "/static/css/main.21086c88.chunk.css"
   },
   {
-    "revision": "d23d0e2e2c9b49c3ed45",
-    "url": "/static/js/2.acb7c8cc.chunk.js"
+    "revision": "1a149214daca79c9e557",
+    "url": "/static/js/2.c8bf53f6.chunk.js"
   },
   {
     "revision": "fd228f9b9a68ce6b23a6cf8b0a38a0e3",
-    "url": "/static/js/2.acb7c8cc.chunk.js.LICENSE"
+    "url": "/static/js/2.c8bf53f6.chunk.js.LICENSE"
   },
   {
-    "revision": "6808452c41818b5c64d5",
-    "url": "/static/js/main.25f0ed9b.chunk.js"
+    "revision": "b50edaa7197252b89be3",
+    "url": "/static/js/main.5f00e944.chunk.js"
   },
   {
     "revision": "75a9631fb786052419d7",
@@ -46,6 +46,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5206f7eb2891ccfbc650876bb9c209c5",
     "url": "/static/media/HomeAppliance.5206f7eb.jpeg"
+  },
+  {
+    "revision": "484b815289003eab0044c5d39c217503",
+    "url": "/static/media/InstallYourself.484b8152.jpeg"
+  },
+  {
+    "revision": "ae1fa908c08bb817148b8de8aa6b7479",
+    "url": "/static/media/InstallationServices.ae1fa908.jpeg"
   },
   {
     "revision": "04601781fb7800e82da5f1f2220c0a15",
@@ -98,6 +106,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "dbdf965960a360f2a889efd7e7887f36",
     "url": "/static/media/SmartReceptacle.dbdf9659.jpeg"
+  },
+  {
+    "revision": "9139414a45c0a15fb1b9848ae2dd975d",
+    "url": "/static/media/alexa.9139414a.png"
+  },
+  {
+    "revision": "11e98e5f5e3c751f690322804d7d51a3",
+    "url": "/static/media/google.11e98e5f.png"
   },
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
