@@ -1,8 +1,6 @@
 {
   "DefaultRoutes": {
     "home": "HOME",
-    "services": "SERVICES",
-    "projects": "PROJECTS",
     "products": "PRODUCTS",
     "contactus": "CONTACT US"
   }
