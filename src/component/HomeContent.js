@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import FeatureBox from './FeatureBox';
-import MyGallery from './MyGallery'
+import MyGallery from './MyGallery';
+import PhoneLink from './PhoneLink';
+import { Phone } from '@styled-icons/material';
 // import PropTypes from 'prop-types';
 
 //TO-DO: move to DB
@@ -196,7 +198,7 @@ const HomeContent = props => {
         </FeatureFour>
       </BoxContainer>
       <BoxFooter>
-        <BoxButton onClick={() => alert('Call 888-888-8888 to get quoten now!') } >Start your project today, get a quote now</BoxButton>
+        <BoxButton /*onClick={() => alert('Call (416) 820-8288 to get quoten now!') }*/ ><PhoneLink href="tel:416-820-8288"><Phone size="20" />Start your project today, get a quote now</PhoneLink></BoxButton>
       </BoxFooter>
       <WhiteBox>
         <BoxTitle>

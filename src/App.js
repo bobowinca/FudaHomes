@@ -12,6 +12,7 @@ import config from './config.json'
 import styled from 'styled-components';
 import HomeContent from './component/HomeContent';
 import ProductContent from './component/ProductContent';
+import ContactUs from './component/ContactUs';
 
 const items = ['HOME','SERVICES', 'PROJECTS', 'ABOUT US', 'CONTACT US'];
 const defaultRoute = config.DefaultRoutes;
@@ -319,6 +320,8 @@ const renderContent = param => {
     case defaultRoute.products:
       console.log(`we are here ${defaultRoute.products}`);
       return <ProductContent/>;
+    case defaultRoute.contactus:
+      return <ContactUs />;
     default:
       return null;
   }
@@ -345,10 +348,6 @@ function App(props) {
   return (
   /** Styled Component Imple */
   <Wrapper>
-    <DMCAHeader>
-    <a href="//www.dmca.com/Protection/Status.aspx?id=ecdd8f38-649b-4eee-9d7a-b39d970fa07a" title="DMCA.com Protection Status" className="dmca-badge"> <img src="//images.dmca.com/Badges/dmca-badge-w100-5x1-03.png?ID=ecdd8f38-649b-4eee-9d7a-b39d970fa07a" alt="DMCA.com Protection Status" /></a> 
-    <script src="//images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
-    </DMCAHeader>
     <div className="one">
       <NavBar>
         <MyHeader/>
