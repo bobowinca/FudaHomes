@@ -68,7 +68,7 @@ const PhoneButton = styled.div`
 
   &:hover {
     // background-color: #B28104;
-    letter-spacing: 1px;
+    letter-spacing: 0.2px;
     transition: all 0.4s ease 0s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
   }
