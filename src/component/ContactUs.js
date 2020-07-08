@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import './ContactUs.scss';
 import PhoneLink from './PhoneLink';
 import { Phone } from '@styled-icons/material';
+import axios from 'axios';
 
 
 const MyContactContainer = styled.div`
@@ -14,7 +14,16 @@ const MyContactContainer = styled.div`
 `;
 
 const AddressBox = styled.div`
-  padding: 50px;
+  display: none;
+  // justify-content: center;
+  // align-items: center;
+  // padding-top: 15px;
+
+  @media (max-width: 768px)  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const StyledForm = styled.form`
@@ -162,17 +171,44 @@ const StyledIFrame = styled.iframe`
 //   </AddressBox>
 // </MyContactContainer>;
 
-const formSubmit = (e) => {
-
-}
-
 const ContactUs = props => {
 
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
   const [email, setEmail] = useState('');
   const [sent, setSent] = useState(false);
-  const [buttonText, setCount] = useState('Send Message');
+  const [buttonText, setButtonText] = useState('Send Message');
+
+  const formSubmit = (e) => {
+    e.preventDefault();
+  
+    setButtonText('...sending');
+
+    const data = {
+      name: name,
+      email: email,
+      message: message
+    }
+
+    // axios.post('http://localhost:50080/api/v1/send', data)
+    axios.post('http://fudahomes.ca/backend/api/v1/send', data)
+    .then( res => {
+        console.log('res:');
+        console.log(res);
+        setSent(true, resetForm());
+    })
+    .catch( () => {
+      console.log('Message not sent')
+    })
+  }
+
+  const resetForm = () => {
+    setName('');
+    setMessage('');
+    setEmail('');
+    setButtonText('Send Message');
+    setTimeout(function(){ setSent(false); }, 1500);
+  }
 
   return (
     <MyContactContainer {...props}>
@@ -184,30 +220,30 @@ const ContactUs = props => {
             {/* <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11573.132470979212!2d-79.6977281!3d43.5172885!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x830d4ea6af673a38!2zRnVEYSBIb21lcyDlr4zovr7lrrblsYUgLSBIb21lIERlc2lnbiBhbmQgUmVub3ZhdGlvbiBHcm91cA!5e0!3m2!1sen!2sca!4v1594104184691!5m2!1sen!2sca" width="600" height="450" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> */}
         </MapBox>
         <FormBox>
-          {/* <AddressBox>
-            3505 Laird Rd Unit 10,<br/> 
-            Mississauga, ON<br/>
-            L5L 5Y7<br/>
-            (416) 820-8288    
-          </AddressBox> */}
-          <StyledForm className="contact-form" onSubmit={ (e) => formSubmit(e)}>
+          <StyledForm onSubmit={ (e) => formSubmit(e)}>
             <StyledFormTitle>Contact Us</StyledFormTitle>
             {/* <StyledLabel class="message-name" htmlFor="message-name">Your Name</StyledLabel> */}
-            <StyledInput onChange={e => setName({ name: e.target.value})} name="name" type="text" placeholder="Name" value={name}/>
+            <StyledInput onChange={e => setName(e.target.value)} name="name" type="text" placeholder="Name" value={name}/>
 
             {/* <StyledLabel class="message-email" htmlFor="message-email">Your Email</StyledLabel> */}
-            <StyledInput onChange={(e) => setEmail({ email: e.target.value})} name="email" type="email" placeholder="your@email.com" required value={email} />
+            <StyledInput onChange={(e) => setEmail(e.target.value)} name="email" type="email" placeholder="your@email.com" required value={email} />
 
             {/* <StyledLabel class="message" htmlFor="message-input">Your Message</StyledLabel> */}
-            <StyledTextArea onChange={e => setMessage({ message: e.target.value})} name="message" type="text" placeholder="#your message" value={message} required/>
-
+            <StyledTextArea onChange={e => setMessage(e.target.value)} name="message" type="text" placeholder="#your message" value={message} required/>
+            {sent && <div>Message Sent!</div>}
             <ButtonBox>
-              <StyledButton type="submit" className="button button-primary">{ buttonText }</StyledButton>
+              <StyledButton type="submit" disabled={sent}>{ buttonText }</StyledButton>
               <PhoneButton><PhoneLink href="tel:416-820-8288"><Phone size="20" />(416) 820-8288</PhoneLink></PhoneButton>
             </ButtonBox>
           </StyledForm>
         </FormBox>
       </ContactBox>
+      <AddressBox>
+        Unit 10, 3505 Laird Rd,<br/>
+        Mississauga, ON<br/>
+        L5L 5Y7<br/>
+        {/* (416) 820-8288 */}
+      </AddressBox>
     </MyContactContainer>
   )
 }
