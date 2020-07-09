@@ -6,6 +6,7 @@ import {
   useParams,
   useRouteMatch
 } from "react-router-dom";
+import ComingSoon from './ComingSoon';
 import styled from 'styled-components';
 // import FeatureBox from './FeatureBox';
 import ProductCard from './ProductCard';
@@ -324,7 +325,7 @@ const ProductContent = props => {
         {/* <h3>Please select a category.</h3> */}
         <CategoryView />
       </Route>
-      <Route exact path={`${path}/SmartAppliance`} /*render={() => (window.location = 'https://smarth.ca/home-appliance-1')}*/ />
+      <Route exact path={`${path}/SmartAppliance`} component={ComingSoon} /*render={() => (window.location = 'https://smarth.ca/home-appliance-1')}*/ />
       <Route path={`${path}/:categoryName`}>
         <CategoryInventory />
       </Route>

@@ -29,6 +29,7 @@ ReactDOM.render(
         <Route path="/projects" render={() => <App currentPage={defaultRoute.projects} />} />
         <Route path="/products" render={() => <App currentPage={defaultRoute.products} />} />
         <Route path="/contactus" render={() => <App currentPage={defaultRoute.contactus} />} />
+        <Route>{'404'}</Route>
         {/* <Route component={Notfound} /> */}
       </Switch>
     </Router>
