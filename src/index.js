@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import ServicesPage from './pages/ServicesPage'
-import ProjectsPage from './pages/ProjectsPage'
-import ProductsPage from './pages/ProductsPage'
-import ContactusPage from './pages/ContactusPage'
+import ServicesPage from './pages/ServicesPage';
+import ProjectsPage from './pages/ProjectsPage';
+import ProductsPage from './pages/ProductsPage';
+import ContactusPage from './pages/ContactusPage';
+import NotFound from './pages/NotFound';
 import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
 import config from './config.json'
@@ -29,7 +30,7 @@ ReactDOM.render(
         <Route path="/projects" render={() => <App currentPage={defaultRoute.projects} />} />
         <Route path="/products" render={() => <App currentPage={defaultRoute.products} />} />
         <Route path="/contactus" render={() => <App currentPage={defaultRoute.contactus} />} />
-        <Route>{'404'}</Route>
+        <Route>{<NotFound />}</Route>
         {/* <Route component={Notfound} /> */}
       </Switch>
     </Router>
