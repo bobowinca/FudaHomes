@@ -185,7 +185,7 @@ const CategoryView = props => {
         return (
           <ProductBox key={`${row.category_id}.${row.name}`}>
             <StyledLink to={`${url}/${categoryName}`}>
-              <ProductCard imgURL={row.image} imgSize={imageSize} captionTitle={row.description} captionText={captionText} />            
+              <ProductCard imgURL={row.image} imgSize={imageSize} title={row.description} buttonText={captionText} />            
             </StyledLink>
           </ProductBox>)
       }

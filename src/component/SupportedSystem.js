@@ -18,7 +18,7 @@ const Container = styled.div`
   padding-top: 30px;
   padding-bottom: 30px;
   // text-align: center;
-  width: 86%;
+  width: 100%;
   display: flex;
   // flex: 1;
   flex-direction: row;
@@ -45,6 +45,7 @@ const SystemTabs = props => (
 );
 
 const SupportedSystem = props => {
+  const { modal } = props;
   return (
     <Container>
       <SystemTabs />

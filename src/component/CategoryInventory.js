@@ -157,15 +157,21 @@ const CategoryInventory = props => {
     products.map(
       row =>{
         // const categoryName = row.name.replace(/\s+/g, ''); //remove spaces
-        const openProduct = ()=> {
-          const windowFeatures = "width=800, height=800,location=no, toolbar=no, menubar=no,resizable=yes,scrollbars=yes,status=no";
-          const windowObjectReference = window.open(row.product_url, row.name, windowFeatures);  //noopener will not return anything for the current window
-        }
-
+        // const openProduct = ()=> {
+        //   const windowFeatures = "width=800, height=800,location=no, toolbar=no, menubar=no,resizable=yes,scrollbars=yes,status=no";
+        //   const windowObjectReference = window.open(row.product_url, row.name, windowFeatures);  //noopener will not return anything for the current window
+        // }
         return (
-          <ProductBox key={`${row.product_id}.${row.name}`} onClick={openProduct}>
+          <ProductBox key={`${row.product_id}.${row.name}`} /*onClick={openProduct}*/>
             {/* <a href={`${row.product_url}`} rel="noopener noreferrer" target="_blank"> */}
-              <ProductCard imgURL={row.image} imgSize={imageSize} captionTitle={row.name} captionText={captionText} />            
+            <StyledLink
+              to={{
+                pathname: `/products/product/${encodeURIComponent(row.name)}`,
+                state: {product: row}
+              }}
+            >
+              <ProductCard imgURL={row.image} imgSize={imageSize} title={row.name} buttonText={captionText} />            
+            </StyledLink>
             {/* </a> */}
           </ProductBox>)
       }

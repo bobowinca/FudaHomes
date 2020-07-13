@@ -78,15 +78,15 @@ const BoxButton = styled.div`
   }
 `;
 
-const ProductCard = ({imgURL, imgSize, captionTitle, captionText,  }) => {
+const ProductCard = ({imgURL, imgSize, title, buttonText,  }) => {
   const image = require(`../assets/products/${imgURL}`);
 
   return (
     <Container>
-      <Title>{captionTitle}</Title>
+      <Title>{title}</Title>
       <img src={image} className="ProductCardImage" width={imgSize.width} alt="logo" />
       <Caption>
-        <BoxButton >{captionText}</BoxButton>
+        <BoxButton >{buttonText}</BoxButton>
       </Caption>
     </Container>
 

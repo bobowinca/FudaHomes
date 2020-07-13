@@ -7,6 +7,8 @@ import {
   useRouteMatch
 } from "react-router-dom";
 import ComingSoon from './ComingSoon';
+import Modal from './Modal';
+import ProductDetails from './ProductDetails';
 import styled from 'styled-components';
 // import FeatureBox from './FeatureBox';
 import ProductCard from './ProductCard';
@@ -330,6 +332,7 @@ const ProductContent = props => {
         <CategoryInventory />
       </Route>
     </Switch>
+    <Route exact path={`${path}/product/:id`} component={ProductDetails} />
     {/* <BoxFooter>
       <BoxButton onClick={() => alert('Call 888-888-8888 to get quoten now!') } >Start your project today, get a quote now</BoxButton>
     </BoxFooter>

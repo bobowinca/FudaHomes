@@ -91,7 +91,7 @@
   grid-auto-rows: minmax(100px, auto);
 }
 
-ul {
+ul.navTabs {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -99,7 +99,7 @@ ul {
   /* background-color: #333333; */
 }
 
-li {
+li.navTab {
   padding-left: 40px;
   float: left;
 }

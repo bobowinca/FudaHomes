@@ -298,14 +298,14 @@ const Item = props => {
   const {path, name, selectPage, currentPage} = props;
   const route = path === 'home'? '/' : `/${path}`;
   const tabStyle = currentPage === name ? activePageStyle : null;
-  return (<li><Link to={route}><MenuItem onClick={()=>{selectPage(name)}} style={tabStyle} >{name}</MenuItem></Link></li>);
+  return (<li className="navTab"><Link to={route}><MenuItem onClick={()=>{selectPage(name)}} style={tabStyle} >{name}</MenuItem></Link></li>);
 }
 
 const NavTabs = props => {
   const tabs = Object.entries(props.tabs);  //cast tabs object to array
   const {selectPage, currentPage} = props;
   return (
-    <ul>
+    <ul className="navTabs">
       {tabs.map(([path, name]) => <Item style key={`menu-item ${path}`} name={name} path={path} selectPage={selectPage} currentPage={currentPage} />)}
     </ul>
   )
