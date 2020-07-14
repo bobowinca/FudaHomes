@@ -4,6 +4,7 @@ import {
   Route,
   // Link,
   useParams,
+  useLocation,
   useRouteMatch
 } from "react-router-dom";
 import ComingSoon from './ComingSoon';
@@ -230,7 +231,6 @@ const ProductContent = props => {
   // const [mycategory, setCategory] = useState([]);
 
   // use React Router hook useRouteMatch
-  const { path, url } = useRouteMatch();
 
   // useEffect(() => {
   //   const fetchData = async () => {
@@ -304,6 +304,15 @@ const ProductContent = props => {
   //   </Switch>
   // );
 
+  const { path, url } = useRouteMatch();
+  const location = useLocation();
+
+  const background = location.state && location.state.background;
+  console.log('-location:');
+  console.log(location);
+  console.log('-background:');
+  console.log(background)
+
   return (
     // (mycategory.length > 0)&&
     <>
@@ -322,17 +331,18 @@ const ProductContent = props => {
         </BoxTitle>
         <MyGallery data={galleryData} />        
       </WhiteBox> */}
-    <Switch>
+    <Switch location={background || location}>
       <Route exact path={path}>
         {/* <h3>Please select a category.</h3> */}
         <CategoryView />
       </Route>
       <Route exact path={`${path}/SmartAppliance`} component={ComingSoon} /*render={() => (window.location = 'https://smarth.ca/home-appliance-1')}*/ />
+      <Route exact path={`${path}/product/:id`} component={ProductDetails} />
       <Route path={`${path}/:categoryName`}>
         <CategoryInventory />
       </Route>
     </Switch>
-    <Route exact path={`${path}/product/:id`} component={ProductDetails} />
+    {background && <Route exact path={`${path}/product/:id`} render={()=>(<Modal openFullPage={true}><ProductDetails/></Modal>)} /*component={ProductDetails}*/ />}
     {/* <BoxFooter>
       <BoxButton onClick={() => alert('Call 888-888-8888 to get quoten now!') } >Start your project today, get a quote now</BoxButton>
     </BoxFooter>

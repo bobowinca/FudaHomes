@@ -18,7 +18,8 @@ const Container = styled.div`
   padding-top: 30px;
   padding-bottom: 30px;
   // text-align: center;
-  width: 100%;
+  // width: 86%;
+  width: ${props=>(props.modal ? '100%' : '86%')};
   display: flex;
   // flex: 1;
   flex-direction: row;
@@ -36,6 +37,16 @@ const StyledImg = styled.img`
   width: 186px;
   height: auto;
   // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  @media (max-width: 425px)  {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
 `;
 
 const SystemTabs = props => (
@@ -47,7 +58,7 @@ const SystemTabs = props => (
 const SupportedSystem = props => {
   const { modal } = props;
   return (
-    <Container>
+    <Container modal={modal ?? false} >
       <SystemTabs />
     </Container>
   )

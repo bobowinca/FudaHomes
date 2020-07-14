@@ -4,6 +4,7 @@ import {
   Route,
   // Link,
   useParams,
+  useLocation,
   useRouteMatch
 } from "react-router-dom";
 import styled from 'styled-components';
@@ -153,6 +154,8 @@ const CategoryInventory = props => {
     //   // display: "grid",
     // }
 
+    const location = useLocation();
+
     return (
     products.map(
       row =>{
@@ -167,7 +170,10 @@ const CategoryInventory = props => {
             <StyledLink
               to={{
                 pathname: `/products/product/${encodeURIComponent(row.name)}`,
-                state: {product: row}
+                state: {
+                  product: row,
+                  background: location,
+                }
               }}
             >
               <ProductCard imgURL={row.image} imgSize={imageSize} title={row.name} buttonText={captionText} />            

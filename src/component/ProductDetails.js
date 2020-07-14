@@ -45,6 +45,21 @@ const FooterImage = styled.div`
   margin-bottom: 10px;
 `;
 
+const StyledIFrame = styled.iframe`
+    width: 420px;
+    height: 320px;
+
+    // @media (max-width: 768px)  {
+    //   left: 10%;
+    //   right: 10%;
+    // }
+
+    @media (max-width: 425px)  {
+      width: 292px;
+      height: 250px;
+    }
+`;
+
 const BulletPoints = ({bullets}) => {
   if(bullets && bullets.length) {
     const listItems = bullets.map((row, index) => <li key={`bullet${index}`}>{row}</li>);
@@ -72,7 +87,7 @@ const ProductDetails = props => {
   // console.log(bullets);
 
   return (
-    <Modal>
+    // <Modal>
       <Container>
         {/* <img src={fudalogo} className="header-logo" alt="logo" /> */}
         <TextBox>
@@ -84,12 +99,14 @@ const ProductDetails = props => {
           <h4>TECHNICAL PARAMETER</h4>
           {/* <div>{product.description}</div> */}
           <BulletPoints bullets={bullets} />
+          <StyledIFrame /*width="420" height="320"*/ src="https://www.youtube.com/embed/UBsbXqI8VzU">
+          </StyledIFrame>
         </TextBox>
         {/* <img src={productImg} className="ProductCardImage" width="100%" height="100px" alt="logo" /> */}
         <FooterImage imgUrl={productImg} />
-        <SupportedSystem />
+        <SupportedSystem modal={true} />
       </Container>
-    </Modal>
+    // </Modal>
   )
 }
 

@@ -5,10 +5,14 @@ import {
     Switch,
     Route,
     Link,
+    Redirect,
     useHistory,
     useLocation,
     useParams
 } from "react-router-dom";
+import StyledLink from './StyledLink';
+
+const FULL_PAGE_TEXT_DEFAULT = 'Go to page >';
 
 const ModalWrapper = styled.div`
 //   display: flex;
@@ -58,21 +62,76 @@ const ModalContainer = styled.div`
     // padding: 16px;
     border: 1px solid 585858;
     border-radius: 6px;
+
+    @media (max-width: 768px)  {
+      left: 10%;
+      right: 10%;
+    }
+
+    @media (max-width: 425px)  {
+      left: 6%;
+      right: 6%;
+    }
+`;
+
+const TopRight = styled.div`
+  position: absolute;
+  top: 0;
+  right: 16px;
+  padding-top: 6px;
+  // background-color: red;
+  // height: 20px;
+  // width: 20px;
 `;
 
 const Modal = props => {
     const history = useHistory();
     // const { id } = useParams();
+    const location = useLocation();
+    // console.log('current location:');
+    // console.log(location);
+    // console.log('current history:');
+    // console.log(history);
+
+    const {openFullPage, fullPageText} = props;
+    const fullPageBtnText = fullPageText || FULL_PAGE_TEXT_DEFAULT;
 
     const  close = e => {
-        e.stopPropagation();
-        history.goBack();
+      // console.log('++++++++++++++++ close called!!!!');
+      e.stopPropagation();
+      history.goBack();
     };
+
+    // const newlocation = {
+    //   pathname: location.pathname,
+    //   state: { 
+    //     product: location.state.product,
+    //     // background: undefined,
+    //   }
+    // }
+
+    // console.log('newlocation>>>');
+    // console.log(newlocation);
+
+    const goFullPage = e => {
+      e.stopPropagation();  // stop the propagation to parent
+      // console.log('newlocation>>>');
+      // console.log(newlocation)
+      // console.log('history>>>');
+      // console.log(history);
+      if (location.state?.background) {
+        location.state.background = undefined;
+      }
+      history.replace(location);
+      // location.state.background = undefined;
+      // history.location.state.background = undefined;
+    }
 
     return (
       <ModalWrapper onClick={close}>
         <ModalContainer>
           {props.children}
+          {openFullPage && <TopRight onClick={goFullPage}>{fullPageBtnText}</TopRight>}
           {/* <div>{`id: ${id}`}</div> */}          
         </ModalContainer>
       </ModalWrapper>
