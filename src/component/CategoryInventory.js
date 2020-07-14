@@ -176,7 +176,7 @@ const CategoryInventory = props => {
                 }
               }}
             >
-              <ProductCard imgURL={row.image} imgSize={imageSize} title={row.name} buttonText={captionText} />            
+              <ProductCard imgURL={row.thumbnail} imgSize={imageSize} title={row.name} buttonText={captionText} />            
             </StyledLink>
             {/* </a> */}
           </ProductBox>)

@@ -10,8 +10,12 @@ export function mapProduct(values) {
   return {
     product_id: values.product_id,
     name: values.name,
+    category_id: values.category_id,
     description: values.description,
+    thumbnail: values.thumbnail,
     image: values.image,
+    video: values.video,
+    footer_image: values.footer_image,
     product_url: values.product_url,
   }
 }
