@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3db98edacbb2349fdd58b90ead8c8d40",
+    "revision": "a9715dce1d7d013d3a4f2883fa12ec44",
     "url": "/index.html"
   },
   {
-    "revision": "dfc60bc3dd5f8c83a1ea",
-    "url": "/static/css/main.e532e61c.chunk.css"
+    "revision": "ee169a87bece5a757cf7",
+    "url": "/static/css/2.0e3f4489.chunk.css"
   },
   {
-    "revision": "da8aa476baddcf915384",
-    "url": "/static/js/2.5253bdfb.chunk.js"
+    "revision": "600407f84b393e09810a",
+    "url": "/static/css/main.1007e2ae.chunk.css"
   },
   {
-    "revision": "fd228f9b9a68ce6b23a6cf8b0a38a0e3",
-    "url": "/static/js/2.5253bdfb.chunk.js.LICENSE"
+    "revision": "ee169a87bece5a757cf7",
+    "url": "/static/js/2.d260900e.chunk.js"
   },
   {
-    "revision": "dfc60bc3dd5f8c83a1ea",
-    "url": "/static/js/main.78b75376.chunk.js"
+    "revision": "b651d5533fc80509587379dd07cc06bd",
+    "url": "/static/js/2.d260900e.chunk.js.LICENSE"
+  },
+  {
+    "revision": "600407f84b393e09810a",
+    "url": "/static/js/main.6b71f2b7.chunk.js"
   },
   {
     "revision": "75a9631fb786052419d7",
@@ -112,11 +116,91 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/alexa.9139414a.png"
   },
   {
+    "revision": "2e157c4f4d08440357e4a222434a7765",
+    "url": "/static/media/basement_1.2e157c4f.jpg"
+  },
+  {
+    "revision": "5c55fb9a1464b9f3f7f5ccef98da7fad",
+    "url": "/static/media/basement_2.5c55fb9a.jpg"
+  },
+  {
+    "revision": "c8411b7a225cb4d2a40e05f60d693b28",
+    "url": "/static/media/basement_3.c8411b7a.jpg"
+  },
+  {
+    "revision": "a91aecc09eb8f8716a17987209032c2c",
+    "url": "/static/media/bathroom_1.a91aecc0.jpg"
+  },
+  {
+    "revision": "548e7cbb5ffe8a6957c4979c825f4485",
+    "url": "/static/media/bathroom_2.548e7cbb.jpg"
+  },
+  {
+    "revision": "6c9be7e45ec9fadb8397483a46ef6be0",
+    "url": "/static/media/bathroom_3.6c9be7e4.jpg"
+  },
+  {
+    "revision": "bb927e1897790b74435a0988c00737a9",
+    "url": "/static/media/bathroom_4.bb927e18.jpg"
+  },
+  {
+    "revision": "6d20b7eded30dc8e6e976e2e7465fceb",
+    "url": "/static/media/bathroom_5.6d20b7ed.jpg"
+  },
+  {
     "revision": "11e98e5f5e3c751f690322804d7d51a3",
     "url": "/static/media/google.11e98e5f.png"
   },
   {
+    "revision": "77846b0e14d65c847de58aee178e23ef",
+    "url": "/static/media/kitchen_1.77846b0e.jpg"
+  },
+  {
+    "revision": "f11bf557f2485194eb652dc160f20a60",
+    "url": "/static/media/kitchen_2.f11bf557.jpg"
+  },
+  {
+    "revision": "3148ed1030e8d581ec3f9747379c6101",
+    "url": "/static/media/kitchen_3.3148ed10.jpg"
+  },
+  {
+    "revision": "e0aa98e823beaba3b50bd41c50608536",
+    "url": "/static/media/livingroom_1.e0aa98e8.jpg"
+  },
+  {
+    "revision": "02bed5c7fdd45cde7025d1176c3be905",
+    "url": "/static/media/livingroom_2.02bed5c7.jpg"
+  },
+  {
+    "revision": "f60c6fae1457397ad78a251b5b4479d2",
+    "url": "/static/media/livingroom_3.f60c6fae.jpg"
+  },
+  {
+    "revision": "c64ab25e7d55499c730a70539bda3b41",
+    "url": "/static/media/livingroom_4.c64ab25e.jpg"
+  },
+  {
+    "revision": "d218721a48365f491d6ebc407e40ceef",
+    "url": "/static/media/livingroom_5.d218721a.jpg"
+  },
+  {
+    "revision": "2f1cfd061794b76c173d891df2c27e94",
+    "url": "/static/media/livingroom_6.2f1cfd06.jpg"
+  },
+  {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
     "url": "/static/media/logo.5d5d9eef.svg"
+  },
+  {
+    "revision": "4a48353e826a0d69fee6f1588c25bc41",
+    "url": "/static/media/painting_1.4a48353e.jpg"
+  },
+  {
+    "revision": "a6ddb103b7df0655fb96f678c398edc4",
+    "url": "/static/media/painting_2.a6ddb103.jpg"
+  },
+  {
+    "revision": "54539c66c6f9dbc300d3d746d8674a3e",
+    "url": "/static/media/painting_3.54539c66.jpg"
   }
 ]);
