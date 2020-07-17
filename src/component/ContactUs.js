@@ -23,6 +23,7 @@ const AddressBox = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 16px;
   }
 `;
 
@@ -126,6 +127,7 @@ const MapBox = styled.div`
   // background-color: blue;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
   // padding: 10px;
   // margin-left: 20px;
   // margin-right: 10px;

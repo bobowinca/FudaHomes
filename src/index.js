@@ -29,6 +29,7 @@ ReactDOM.render(
         <Route path="/services" render={() => <App currentPage={defaultRoute.services} />} />
         <Route path="/projects" render={() => <App currentPage={defaultRoute.projects} />} />
         <Route path="/products" render={() => <App currentPage={defaultRoute.products} />} />
+        <Route path="/gallery" render={() => <App currentPage={defaultRoute.gallery} />} />
         <Route path="/contactus" render={() => <App currentPage={defaultRoute.contactus} />} />
         <Route>{<NotFound />}</Route>
         {/* <Route component={Notfound} /> */}

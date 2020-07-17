@@ -205,7 +205,7 @@ const CategoryInventory = props => {
         <BoxTitle>
           Project Gallery
         </BoxTitle>
-        <MyGallery data={galleryData} />        
+        <CameraRoll data={galleryData} />        
       </WhiteBox> */}
     </>
   )

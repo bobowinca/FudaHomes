@@ -96,11 +96,13 @@ const Modal = props => {
     const {openFullPage, fullPageText} = props;
     const fullPageBtnText = fullPageText || FULL_PAGE_TEXT_DEFAULT;
 
-    const  close = e => {
+    const  nav_close = e => {
       // console.log('++++++++++++++++ close called!!!!');
       e.stopPropagation();
       history.goBack();
     };
+
+    const close = props.close || nav_close;
 
     // const newlocation = {
     //   pathname: location.pathname,
@@ -127,9 +129,13 @@ const Modal = props => {
       // history.location.state.background = undefined;
     }
 
+    const cancelPop = e => {
+      e.stopPropagation();
+    }
+
     return (
       <ModalWrapper onClick={close}>
-        <ModalContainer>
+        <ModalContainer onClick={cancelPop}>
           {props.children}
           {openFullPage && <TopRight onClick={goFullPage}>{fullPageBtnText}</TopRight>}
           {/* <div>{`id: ${id}`}</div> */}          

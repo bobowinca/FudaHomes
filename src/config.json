@@ -2,6 +2,7 @@
   "DefaultRoutes": {
     "home": "HOME",
     "products": "PRODUCTS",
+    "gallery": "GALLERY",
     "contactus": "CONTACT US"
   }
 }

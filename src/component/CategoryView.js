@@ -13,33 +13,9 @@ import StyledLink from './StyledLink';
 import ProductCard from './ProductCard';
 import SupportedSystem from './SupportedSystem';
 import Certificates from './Certificates';
-import MyGallery from './MyGallery';
+import CameraRoll from './CameraRoll';
 import installYourselfImg from '../assets/products/InstallYourself.jpeg';
 import installationServicesImg from '../assets/products/InstallationServices.jpeg';
-
-//TO-DO: move to DB
-const galleryData = [
-  {
-    category: 'Living Room',
-    imgURL: 'https://lh3.googleusercontent.com/-mmtiL1BlFgNZcmdwQtbeLmAyKaQgun-pYH-wckPQm-smjRN0MsvHsnYHPdKNWm5NA8NgYtFMhC1o_-wf_tUnLJS2oXJx5-HBLeD7FCxCP0ljKRBYmbfiDoPFcXvgckv8XkhcCuPmw=w2160-h1200-no'
-  },
-  {
-    category: 'Kitchen',
-    imgURL: 'https://lh3.googleusercontent.com/qHCJXqFIfOeRf6zX3G6hySY_ZMdJMDa_24Q5Nf6eaBIZFct15Qj8UX5Mgahxyit2050vlpdajJr9AJFrrZq2lNrQKiq7E5aZrXPu-cYNi6VVPtAdNP9nMlmQ_dccERgYs_Dfb_mokg=w640-h637-no'
-  },
-  {
-    category: 'Bath Room',
-    imgURL: 'https://lh3.googleusercontent.com/fII5vdRk0jTgNE-hExp6k1Bh5opLMZGxr54bPZmJNudCUtJebyH-s4sFlfIlQqMglFBwV7DSBQK68t4Z4S73xj05wOwshFvbkVQgDrHNL5LC8QzGp04Fa9GrVhZWm6fbomcVIJKAhg=s750-no'
-  },
-  {
-    category: 'Basement',
-    imgURL: 'https://lh3.googleusercontent.com/fh1PwDz2PlUT2SOUFSuiI8gLHAEOvuKxaa6WgAVGB5axbeJCZ1dgj44RKnMnmtWtjCNO9qMjV4hob92ErQ1VxPu7ulnKB22wdFNJDPCXNJPWnI_EDWmYBQMU3z2T9NxgQbjMdtzeNA=w640-h428-no'
-  },
-  {
-    category: 'Tapping & Painting',
-    imgURL: 'https://lh3.googleusercontent.com/1bVEy99sHDBlWhaBjWHs3UzlYCL1rydwrJOIUCxfz3UuML7_F8UgrCwd6Nf7gIvXHS2M_ocZ3Q0sS7jTrc6JV2U7OC3MH1pti3V88rk89vXFPjZOBJErtvEwJuU_wEfWfxjQW3nvqA=s500-no'
-  },
-];
 
 // const installationServicesImg = require(`../assets/products/InstallationServices.jpeg`);
 
@@ -69,16 +45,6 @@ const BoxTitle = styled.div`
 `;
 
 const BoxContainer = styled.div`
-  // display: grid;
-  // grid-template-columns: repeat(4, 1fr);
-  // grid-template-rows: repeat(2, 1fr);
-  // padding-top: 40px;
-  // padding-bottom: 30px;
-  // grid-gap: 36px;
-  // // width : 80%;
-  // // width: 300px;
-  // // height: 50px;
-  // // background-color: red;
   display: flex;
   flex: 1;
   flex-wrap: wrap;
@@ -239,7 +205,7 @@ const CategoryView = props => {
         <BoxTitle>
           Project Gallery
         </BoxTitle>
-        <MyGallery data={galleryData} />        
+        <CameraRoll data={galleryData} />        
       </WhiteBox> */}
     </>
   );
