@@ -13,6 +13,7 @@ import styled from 'styled-components';
 import HomeContent from './component/HomeContent';
 import ProductContent from './component/ProductContent';
 import GalleryContent from './component/GalleryContent';
+import VideoContent from './component/VideoContent';
 import ContactUs from './component/ContactUs';
 
 const items = ['HOME','SERVICES', 'PROJECTS', 'ABOUT US', 'CONTACT US'];
@@ -160,6 +161,9 @@ const renderContent = (param, selectPage) => {
     case defaultRoute.gallery:
         console.log(`we are here ${defaultRoute.gallery}`);
         return <GalleryContent />;
+    case defaultRoute.videos:
+        console.log(`we are here ${defaultRoute.videos}`);
+        return <VideoContent />;
     case defaultRoute.contactus:
       return <ContactUs />;
     default:

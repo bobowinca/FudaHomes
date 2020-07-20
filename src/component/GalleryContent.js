@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './MyHeader.scss';
 import styled from 'styled-components';
+import { PhotoLibrary } from '@styled-icons/material';
 // import {
 //   BrowserRouter as Router,
 //   Switch,
@@ -205,7 +206,7 @@ const GalleryContent = props => {
       <Container>
         {/* <img src={fudalogo} className="header-logo" alt="logo" /> */}
         <TextBox>
-          <h2>Project Gallery</h2>
+          <h2>Project Gallery <PhotoLibrary size="30" /></h2>
         </TextBox>
         <AlbumBox>
           {galleryData.map(it => 
